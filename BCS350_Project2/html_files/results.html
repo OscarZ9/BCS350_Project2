@@ -2,10 +2,17 @@
 <html lang = "en">
 <head>
     <meta charset = "UFC-8">
-    <title>MY Quiz</title>
+    <title>Results</title>
 </head>
 <body>
+    <h1>Results</h1>
+    <p id = "displayScore"></p>
 
+    <button onclick = "window.location.href='../html_files/index.html'">Play Again</button>
 
+    <script>
+        const score = sessionStorage.getItem("score");
+        document.getElementById("displayScore").innerHTML = "Your score: " + score;
+    </script>
 </body>
 </html>
