@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+session_start();
 
 $name = $_POST["name"];
 $lastName = $_POST["lastName"];
