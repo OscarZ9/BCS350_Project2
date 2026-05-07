@@ -39,7 +39,12 @@ function checkAnswer(selected){
     currentQuestion++;
     if (currentQuestion === questions.length){
         sessionStorage.setItem("score", score);
-        window.location.href = '../html_files/results.html';
+        fetch("../php/save_score.php", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({score: score})
+    }).then(() =>
+        window.location.href = '../html_files/results.html');
     } else {
         showQuestion();
     }
@@ -54,4 +59,5 @@ function shuffle(array){
     }
     return array;
 }
+
 
