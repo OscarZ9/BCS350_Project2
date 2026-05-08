@@ -2,11 +2,19 @@
 <html lang = "en">
 <head>
     <meta charset = "UFC-8">
+
     <title>Leaderboard</title>
 </head>
 <body>
+
+<script src="../StyleandLogic/auth.js"></script>
+<div id = "options">
+    <button type = "button" id = "profile" onclick="window.location.href = '../html_files/profile.html'">Profile</button>
+    <button type = "button" id = "result" onclick="window.location.href = '../html_files/results.html'">Results</button>
+    <button type = "button" id = "home" onclick="window.location.href='../html_files/index.html'">Home</button>
+</div>
 <div>
-    <table>
+    <table id = "leaderboardTable">
         <tr>
             <th>Rank</th>
             <th>Name</th>
@@ -14,6 +22,8 @@
         </tr>
     </table>
 </div>
+
+<script src = "../StyleandLogic/leaderboard.js"></script>
 
 </body>
 </html>

@@ -5,6 +5,15 @@
     <title>Profile</title>
 </head>
 <body>
+
+<script src="../StyleandLogic/auth.js"></script>
+
+<div id = "options">
+    <button type = "button" id = "Leaderboard" onclick="window.location.href = '../html_files/leaderboard.html'">Leaderboard</button>
+    <button type = "button" id = "result" onclick="window.location.href = '../html_files/results.html'">Results</button>
+    <button type = "button" id = "home" onclick="window.location.href='../html_files/index.html'">Home</button>
+</div>
+
 <div>
     <p>Name</p>
 </div>
@@ -13,13 +22,16 @@
 </div>
 <div>
     <p>History</p>
-    <table>
+    <table id = "historyTable">
         <tr>
             <th>Date</th>
             <th>Score</th>
         </tr>
     </table>
 </div>
+
+
+<script src = "../StyleandLogic/profile.js"></script>
 
 </body>
 </html>

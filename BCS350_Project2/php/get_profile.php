@@ -6,7 +6,7 @@ $user_id = $_SESSION["user_id"];
 
 $sql = "SELECT name, scores.score, scores.date
         FROM users
-        JOIN scores on scores.user_id = user_id
+        JOIN scores on scores.user_id = users.id
         WHERE scores.user_id = '$user_id'
 ";
 
