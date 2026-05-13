@@ -4,6 +4,7 @@
     <meta charset = "UTF-8">
     <title>Results</title>
     <link rel="stylesheet" href = "../StyleandLogic/style.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
 
@@ -21,10 +22,11 @@
     </div>
 </div>
 
+<div id="resultsCard">
     <h1>Results</h1>
-    <p id = "displayScore"></p>
-
-<button id = "startBtn" onclick="window.location.href='../html_files/quiz.html'">Play Again</button>
+    <p id="displayScore"></p>
+    <button id="startBtn" onclick="window.location.href='../html_files/quiz.html'">Play Again</button>
+</div>
 
     <script>
         const score = sessionStorage.getItem("score");

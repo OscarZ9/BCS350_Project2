@@ -10,12 +10,11 @@ $confirmPassword = $_POST["confirmPassword"];
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
 if ($password === $confirmPassword){
-    $sql = "INSERT INTO users (name, lastName, email, password) VALUES ('$name', '$lastName', '$email', '$hashedPassword')";
-    mysqli_query($conn, $sql);
-
+    $stmt = mysqli_prepare($conn, "INSERT INTO users (name, lastName, email, password) VALUES (?, ?, ?, ?)");
+    mysqli_stmt_bind_param($stmt, "ssss", $name, $lastName, $email, $hashedPassword);
+    mysqli_stmt_execute($stmt);
     header("Location: ../html_files/login.html");
 } else {
     echo "Password does not match";
 }
-
 ?>
