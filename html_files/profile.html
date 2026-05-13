@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href = "../StyleandLogic/style.css">
+</head>
+<body>
+
+<script src="../StyleandLogic/auth.js"></script>
+
+<div id="options">
+    <div>
+        <button type="button" onclick="window.location.href='../html_files/index.html'">Home</button>
+        <button type="button" class = "active" onclick="window.location.href='../html_files/profile.html'">Profile</button>
+        <button type="button" onclick="window.location.href='../html_files/leaderboard.html'">Leaderboard</button>
+        <button type="button" onclick="window.location.href='../html_files/results.html'">My Score</button>
+    </div>
+    <div>
+        <button type="button" onclick="window.location.href='../php/logout.php'">Log Out</button>
+    </div>
+</div>
+
+<div id="profileCard">
+    <div id="profileAvatar"></div>
+    <div>
+        <p id="userName"></p>
+        <p id="userEmail"></p>
+    </div>
+</div>
+<div>
+    <p style = "margin-left: 20px;">History</p>
+    <table id = "historyTable">
+        <tr>
+            <th>Date</th>
+            <th>Score</th>
+        </tr>
+    </table>
+</div>
+
+
+<script src = "../StyleandLogic/profile.js"></script>
+
+</body>
+</html>
