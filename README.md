@@ -22,10 +22,10 @@ http://oscarquiz.infinityfreeapp.com
 ## databese Schema
 
 ### users
-| Colum    | Type           | Notes |
-|----------------------------------
-| id       | int            | Primary key, Auto increment
-| name     | varchart (50)  | not null
+| Colum    | Type           | Notes                       |
+|-------------------------------------------------------- |
+| id       | int            | Primary key, Auto increment |
+| name     | varchart (50)  | not null                    |
 | lastName | varchart (50)  | not null
 | email    | varchart (100) | Unique, not null
 | password | varchart (255) | Hashed, not null
